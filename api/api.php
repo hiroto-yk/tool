@@ -18,15 +18,17 @@ $filebody = $_POST['filebody'];
 
 switch($tool){
     case 'dedukti':
-        $cmd = '/home/hiroto/.opam/default/bin/dk check ';
+        $cmd = '/home/hiroto/.opam/default/bin/dk check --no-color ';
         $tmpfile = './tmp/tempfile.dk';
+       
         $fp = fopen($tmpfile, 'w');
         fwrite($fp, $filebody);
         fclose($fp);
         break;
     case 'lambdapi':
-        $cmd = '/home/hiroto/.opam/default/bin/lambdapi check ';
+        $cmd = '/home/hiroto/.opam/default/bin/lambdapi check --no-color ';
         $tmpfile = "/var/www/html/webcui/lambdapi-examples/tempfile." . $_POST['extension'];
+       
         $fp = fopen($tmpfile, 'w');
         fwrite($fp, $filebody);
         fclose($fp);
@@ -34,6 +36,7 @@ switch($tool){
     case 'natt':
         $cmd = '/var/www/html/webcui/sol/api/sol/bin/NaTT-1.9/NaTT.exe ';
         $tmpfile = "./tmp/tempfile.trs";
+      
         $fp = fopen($tmpfile, 'w');
         fwrite($fp, $filebody);
         fclose($fp);
@@ -41,7 +44,7 @@ switch($tool){
 }
 
 $cmd = $cmd . $tmpfile . ' 2>&1';
-echo $cmd . '<br';
+//echo $cmd . '<br>';
 exec($cmd, $output); //実行
 exec('rm ' . $tmpfile);
 
