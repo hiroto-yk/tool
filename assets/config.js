@@ -1,12 +1,12 @@
 export const config = {
-  name: `tool`,                // Application's name
+  name: `Checktools`,                // Application's name
 
   // logo: `logo_icon.png`,        // A filename in ~/static/
 
-  address: '/webcui/tool',      // http://localhost:3000/[address]
+  address: '/webcui/checktools',      // http://localhost:3000/[address]
 
-  webApiUrl: `http://solweb.mydns.jp/webcui/tool/api/api.php`,
-             //`http://localhost:80/webcui/tool/api/api.php`, 
+  webApiUrl: `http://solweb.mydns.jp/webcui/checktools/api/api.php`,
+             //`http://localhost:80/webcui/checktools/api/api.php`, 
 
   consoleLocation: 'right',    // Placing the console. [left | right | top | bottom]
   toolbarLocation: 'left',    // Placing the toolbar. [left | right]
@@ -40,8 +40,8 @@ export const config = {
       enable: true,
       icon: 'mdi-file-multiple',
       text: 'Examples',
-      webApiUrl: 'http://solweb.mydns.jp/webcui/tool/api/files.php',
-                 //'http://localhost:80/webcui/tool/api/files.php',
+      webApiUrl: 'http://solweb.mydns.jp/webcui/checktools/api/files.php',
+                 //'http://localhost:80/webcui/checktools/api/files.php',
     },
     variables: {
       enable: false,
