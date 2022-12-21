@@ -10,17 +10,17 @@ putenv('LANG=C.UTF-8');
 if ($_POST['path'] == null) {
   $dirs = array(
     array(
-      'name' => 'contents',
-      'display' => 'Deduki',
-      'dir' => '/var/www/html/webcui/dedukti-examples'
+      'name' => 'filebody',
+      'display' => 'Dedukti',
+      'dir' => '/var/www/html/webcui/dedukti-examples/OK'
     ),
     array(
-      'name' => 'contents',
-      'display' => 'Lambapi',
+      'name' => 'filebody',
+      'display' => 'Lambdapi',
       'dir' => '/var/www/html/webcui/lambdapi-examples'
     ),
     array(
-      'name' => 'contents',
+      'name' => 'filebody',
       'display' => 'NaTT',
       'dir' => '/var/www/html/webcui/natt-examples'
     )

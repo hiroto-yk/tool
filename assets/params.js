@@ -2,8 +2,15 @@ export const params = {
   tool: {
     default: 'dedukti'
   },
+  file: {
+    display: 'File',
+    type: 'file',
+    target: 'filebody',
+    default: [],
+    size: 'whole'
+  },
   extension: {
-    display: 'Extention',
+    display: 'Lambdapi Extention',
     type: 'radio',
     buttons: [
       {
