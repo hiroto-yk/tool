@@ -14,15 +14,15 @@ export const params = {
     type: 'radio',
     buttons: [
       {
-        name: 'dk',
-        display: 'dk'
-      },
-      {
         name: 'lp',
         display: 'lp'
+      },
+      {
+        name: 'dk',
+        display: 'dk'
       }
     ],
-    default: 'dk'
+    default: 'lp'
   },
   filebody: {
     display: 'filebody',
