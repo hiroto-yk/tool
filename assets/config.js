@@ -49,7 +49,7 @@ export const config = {
     },
     dedukti: {
       enable: true,
-      icon: 'mdi-play',
+      icon: 'mdi-alpha-d',
       text: 'Dedukti',
       method: (webcui) => {
         webcui.sendReq(
@@ -64,7 +64,7 @@ export const config = {
     },
     lambdapi: {
       enable: true,
-      icon: 'mdi-play',
+      icon: 'mdi-alpha-l',
       text: 'Lambdapi',
       method: (webcui) => {
         webcui.sendReq(
@@ -79,7 +79,7 @@ export const config = {
     },
     sendReq: {
       enable: true,
-      icon: 'mdi-play',
+      icon: 'mdi-alpha-n',
       text: 'NaTT',
       before: (webcui) => {
         webcui.clearConsole()
