@@ -28,6 +28,8 @@ export const params = {
     display: 'filebody',
     type: 'textarea',
     rows: 19,
-    default: ''
+    default: '',
+    monospace: true,
+    size: 'whole'
   }
 }
