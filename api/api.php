@@ -45,10 +45,11 @@ switch($tool){
 
 $cmd = $cmd . $tmpfile . ' 2>&1';
 //echo $cmd . '<br>';
-exec($cmd, $output); //実行
+//CUIプログラムを実行
+exec($cmd, $output);
 exec('rm ' . $tmpfile);
 
-//表示
+//結果表示
 printOutput($output);
 
 ?>
